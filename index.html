@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TRANSLATE</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!-- iki adet metin kutusu oluşturuşdu.-->
+            <div class="text-input">
+                <!-- "Metin Girin" yazısıyla başlayan bir yer tutucu içeriyor ve kullanıcıdan bir metin girmesini bekliyor. -->
+                <textarea class="from-text" placeholder="Metin Girin"></textarea>
+                <!-- İkinci metin kutusu ise "Çeviri" yazısıyla başlayan bir yer tutucu içeriyor ve ilk metinde girilen metnin çevirisini göstermek için kullanılabilir. -->
+                <textarea class="to-text" placeholder="Çeviri"></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <!--  İki adet ikonlu buton oluşturuyor. -->
+                    <div class="icons">
+                        <!-- Bir hoparlör simgesidir.Kullanıcının bir metin parçasının sesli okunmasını sağlamak için kullanılır -->
+                        <i id="from" class="fas fa-volume-up"></i>
+                        <!-- Bir kopyala simgesidir. Kullanıcının metin parçasını panoya kopyalamasını sağlamak için kullanılır  -->
+                        <i id="from" class="fas fa-copy"></i>
+                    </div>
+                    <select>
+                        
+                    </select>
+                </li>
+                <!-- Bir "değiştir" (exchange) butonudur. -->
+                <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+                <li class="row to">
+                    <select> </select>
+                    <div class="icons">
+                        <!-- Bir kopyala simgesidir. Kullanıcının metin parçasını panoya kopyalamasını sağlamak için kullanılır  -->
+                        <i id="to" class="fas fa-copy"></i>
+                         <!-- Bir hoparlör simgesidir.Kullanıcının bir metin parçasının sesli okunmasını sağlamak için kullanılır -->
+                        <i id="to" class="fas fa-volume-up"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Bir "ÇEVİR" butonudur."TRANSLATE" yazısını içeriyor ve kullanıcının metinleri çevirmek için butona tıklamasını sağlar. -->
+        <button>TRANSLATE</button>
+    </div>
+
+    <!-- Bu kodlar, bir HTML sayfasında bir JavaScript dosyasını sayfaya dahil etmek için kullanılır.  -->
+    <script src="countries.js"></script>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/097d750326.js" crossorigin="anonymous"></script>
+</body>
+</html>
